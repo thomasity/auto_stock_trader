@@ -1,0 +1,50 @@
+[
+  {
+    "name": "high_rsi_aggressive",
+    "lookback_days": 252,
+    "seed": 0,
+    "k": 4,
+    "use_robust_scaler": true,
+    "min_cluster_size": 3,
+    "selection": "best_by",
+    "best_by": "rsi",
+    "agg": "mean",
+    "ascending": false,
+    "select_clusters": null,
+    "centroids_scaled": false,
+    "freeze_centroids": false,
+    "init_centroids_df": null
+  },
+  {
+    "name": "low_volatility",
+    "lookback_days": 252,
+    "seed": 0,
+    "k": 4,
+    "use_robust_scaler": true,
+    "min_cluster_size": 3,
+    "selection": "best_by",
+    "best_by": "atr_pct",
+    "agg": "mean",
+    "ascending": true,
+    "select_clusters": null,
+    "centroids_scaled": false,
+    "freeze_centroids": false,
+    "init_centroids_df": null
+  },
+  {
+    "name": "macd_momentum",
+    "lookback_days": 252,
+    "seed": 0,
+    "k": 5,
+    "use_robust_scaler": true,
+    "min_cluster_size": 3,
+    "selection": "best_by",
+    "best_by": "macd_hist",
+    "agg": "median",
+    "ascending": false,
+    "select_clusters": null,
+    "centroids_scaled": false,
+    "freeze_centroids": false,
+    "init_centroids_df": null
+  }
+]
