@@ -9,3 +9,4 @@ pytz
 pandas_market_calendars
 boto3
 python-dotenv
+lxml

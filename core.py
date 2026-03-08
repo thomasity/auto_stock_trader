@@ -6,7 +6,6 @@ import pandas as pd
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import RobustScaler
 import yfinance as yf
-from IPython.display import display
 
 try:
     from pypfopt import EfficientFrontier, risk_models, expected_returns
@@ -613,7 +612,7 @@ if __name__ == "__main__":
         }
         _all_results.append(_entry)
         print(f"  Config {_name!r} done: {len(_entry['picks'])} picks.")
-        display(w)
+        print(w)
 
     print(f"\nAll {len(_configs)} configs complete.")
     _payload = _json.dumps({
